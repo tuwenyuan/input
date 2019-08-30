@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+        <TextView
+                android:id="@+id/tvPinYinCandidate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D7D7D7"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:fadeScrollbars="false"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+        <ImageView
+                android:id="@+id/ivIMEClose"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="12dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@mipmap/arrow_down"
+                android:tag="OpenCandidate"
+        />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D7D7D7"/>
+</LinearLayout>
